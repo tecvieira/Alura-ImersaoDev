@@ -1,4 +1,24 @@
 // PARTE 1: Lista de perguntas e respostas
+perguntas = [
+  {
+    pergunta: "Qual o principal pokemon do Ash?",
+    respostas: [
+      { "opcao": "Pikachu", "correto": true },
+      { "opcao": "Bubasauro", "correto": false },
+      { "opcao": "Charmander", "correto": false }
+    ]
+  },
+  {
+    "pergunta": "Qual é o nome da equipe de vilões mais famosa da série Pokémon?",
+    "respostas": [
+      { "opcao": "Equipe Roket", "correto": true },
+      { "opcao": "Equipe Aqua", "correto": false },
+      { "opcao": "Equipe Magma", "correto": false }
+    ]
+  }
+  
+];
+
 
 
 // PARTE 2: Pegando os elementos do HTML
