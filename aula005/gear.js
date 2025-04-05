@@ -16,10 +16,8 @@ perguntas = [
       { "opcao": "Equipe Magma", "correto": false }
     ]
   }
-  
+
 ];
-
-
 
 // PARTE 2: Pegando os elementos do HTML
 const perguntaElemento = document.querySelector(".pergunta");
@@ -35,7 +33,9 @@ let acertos = 0; // Contador de acertos
 
 // PARTE 4: Função para carregar uma nova pergunta
 function carregarPergunta() {
-  progressoElemento.innerHTML = `${indiceAtual + 1}/${perguntas.length}`; // Atualiza o progresso
+  // Neste ponto vai evoluir o contador e mostrar total de perguntas
+  progressoElemento.innerHTML = `${indiceAtual + 1}/${perguntas.length}`;
+   // Atualiza o progresso
   const perguntaAtual = perguntas[indiceAtual]; // Pega a pergunta atual
   perguntaElemento.innerHTML = perguntaAtual.pergunta; // Exibe a pergunta
 
@@ -56,7 +56,7 @@ function carregarPergunta() {
       // Se a resposta for correta (resposta.correto === true), incrementa o número de acertos
       if (resposta.correto) {
         acertos = acertos + 1;
-        acertos++; // Incrementa o contador de acertos
+        //acertos++; // Incrementa o contador de acertos
       }
 
       // Avança para a próxima pergunta
